@@ -1,0 +1,128 @@
+.index-201921{
+	height: 600px;
+	background-image:url(../res/banner/banner_201921.png);
+}
+.index-1921mendao{
+	height: 600px;
+	background-image:url(../res/banner/banner_1921mendao.png);
+}
+.index-partners{
+	height: 500px;
+	background-image:url(../res/banner/partners.jpg);
+	background-attachment: fixed;
+}
+.index-suppliers{
+	height:500px;
+	background-image:url(../res/banner/suppliers.jpg);
+}
+.index-about{
+	height:500px;
+	background-image:linear-gradient(#0000004D,#0000004D),url(../res/banner/basic.jpg);
+}
+@media(max-width: 1024px){
+	.index-201921{
+		height:calc(100% - 60px);
+		background-image:url(../res/banner/banner_201921m.jpg);
+		background-position: center bottom;
+	}
+	.index-1921mendao{
+		height:calc(100% - 60px);
+		background-image:url(../res/banner/banner_1921mendaom.jpg);
+		background-position: center bottom;
+	}
+	.index-about{
+		height:auto;
+	}
+}
+
+.universal-bg{
+	height:500px;
+	background-image:linear-gradient(#0000004D,#0000004D), url(../res/banner/basic.jpg);
+}
+@media(max-width: 1024px){
+	.universal-bg{
+		height:auto
+	}
+}
+
+.customize-bg{
+	height:300px;
+	background-image:linear-gradient(#0000004D,#0000004D), url(../res/banner/customize.jpg);
+}
+@media(max-width: 1024px){
+	.customize-bg{
+		height:auto
+	}
+}
+
+.product-201921-head{
+	height: 500px;
+	background-image:linear-gradient(to right, #FFFFFFFF,#FFFFFFFF,#FFFFFFaa,#FFFFFF00,#FFFFFF00,#FFFFFF00),url(../res/banner/201921.jpg);
+}
+@media(max-width: 1024px){
+	.product-201921-head{
+		height: 100%;
+		background-image:url(../res/banner/201921a.jpg);
+	}
+}
+
+.jumbohead2{
+	height:auto;
+	background: #fff
+}
+.jumbohead3{
+	height:560px;
+}
+.jumbohead4{
+	height:500px;
+	background-image:linear-gradient(to right, #FFFFFFFF,#FFFFFFFF,#FFFFFFaa,#FFFFFFaa,#FFFFFFaa,#FFFFFFaa),url(../res/img/product/201921/white.jpg);
+}
+.jumbohead5{
+	height:500px;
+	background-image:linear-gradient(to right, #FFFFFFFF,#FFFFFFFF,#FFFFFFFF,#FFFFFFaa,#FFFFFF00,#FFFFFF00),url(../res/img/product/201921/detail.jpg);
+}
+/*.jumbohead6{
+	height:500px;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../res/banner/6a.jpg);
+}*/
+
+.jumbohead8{
+	height:300px;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../res/banner/2.jpg);
+}
+.jumbohead9{
+height: auto;
+background: transparent;
+}
+.jumbohead9 .col-md-4{
+	padding:5px
+}
+@media(max-width: 1024px){
+	.jumbohead2{
+		height:auto;
+	}
+	.jumbohead3{
+		height:560px;
+	}
+	.jumbohead4{
+		height:auto;
+		background-position: center;
+		background-image:linear-gradient(#FFFFFFFF,#FFFFFFFF,#FFFFFFaa,#FFFFFFaa,#FFFFFFaa,#FFFFFFaa),url(../res/img/product/201921/white.jpg);
+	}
+	.jumbohead5{
+		height:auto;
+		background:#fff;
+	}
+	/*.jumbohead6{
+	height:auto;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../res/banner/6a.jpg);
+	}*/
+	
+	.jumbohead8{
+		height:auto;
+		background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../res/banner/2.jpg);
+	}
+	.jumbohead9{
+		height: auto;
+	}
+}

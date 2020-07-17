@@ -1,0 +1,162 @@
+{
+"solutions":[
+	{
+		"name": "文化衫",
+		"type": "all idol-obj daily",
+		"param":"tee",
+		"duration": "30",
+		"proj":[
+			{
+				"img": "./res/img/index/products/1921.jpg"
+			},{
+				"img": "./res/img/index/products/1921mendao.jpg"
+			},{
+				"img": "./res/img/index/products/bnu.jpg"
+			}
+		]
+	},{
+		"name": "金属徽章",
+		"type": "all creative",
+		"param":"badge",
+		"duration": "30"
+	},{
+		"name": "手机壳",
+		"type": "all idol-obj daily",
+		"param":"phone-case",
+		"duration": "30"
+	},{
+		"name": "帆布包",
+		"type": "all idol-obj daily office",
+		"param":"canvas-bag",
+		"duration": "30"
+	},{
+		"name": "明信片",
+		"type": "all idol-obj daily office",
+		"param":"postcard",
+		"duration": "30"
+	},{
+		"name": "海报",
+		"type": "all idol-obj creative",
+		"param":"poster",
+		"duration": "30"
+	},{
+		"name": "卡套",
+		"type": "all daily office",
+		"param":"card-cover",
+		"duration": "30"
+	},{
+		"name": "名片",
+		"type": "all office",
+		"param":"business-card",
+		"duration": "30"
+	},{
+		"name": "四折页",
+		"type": "all office creative",
+		"param":"hinge",
+		"duration": "30"
+	},{
+		"name": "手提袋",
+		"type": "all daily office idol-obj ",
+		"param":"bag",
+		"duration": "30"
+	},{
+		"name": "礼品盒",
+		"type": "all daily office",
+		"param":"gift-box",
+		"duration": "30"
+	},{
+		"name": "快递盒",
+		"type": "all daily",
+		"param":"parcel",
+		"duration": "30"
+	},{
+		"name": "领带",
+		"type": "all daily office",
+		"param":"tie",
+		"duration": "30"
+	},{
+		"name": "胶带",
+		"type": "all daily office",
+		"param":"tape",
+		"duration": "30"
+	},{
+		"name": "铅笔",
+		"type": "all office",
+		"param":"pencil",
+		"duration": "30"
+	},{
+		"name": "鼠标垫",
+		"type": "all daily office",
+		"param":"mousepad",
+		"duration": "30"
+	},{
+		"name": "马克杯",
+		"type": "all daily",
+		"param":"mug",
+		"duration": "30"
+	},{
+		"name": "杂志 / 画册 / 作品集",
+		"type": "all creative",
+		"param":"magazine",
+		"duration": "30"
+	},{
+		"name": "银行卡",
+		"type": "all daily creative",
+		"param":"bank-card",
+		"duration": "30"
+	},{
+		"name": "CD",
+		"type": "all daily creative",
+		"param":"CD",
+		"duration": "30"
+	}
+],"designers":[
+	{
+		"name": "Grey",
+		"bio": "平面设计师，5年设计经验，好评率99%",
+		"proj":[
+			{
+				"img": "./res/img/index/products/1921.jpg"
+			},{
+				"img": "./res/img/index/products/1921mendao.jpg"
+			},{
+				"img": "./res/img/index/products/bnu.jpg"
+			}
+		]
+	},{
+		"name": "Natsu Houraisen",
+		"bio": "平面设计师，5年设计经验，好评率99%",
+		"proj":[
+			{
+				"img": "./res/img/index/products/1921.jpg"
+			},{
+				"img": "./res/img/index/products/1921mendao.jpg"
+			},{
+				"img": "./res/img/index/products/bnu.jpg"
+			}
+		]
+	},{
+		"name": "liz",
+		"bio": "平面设计师，5年设计经验，好评率99%",
+		"proj":[
+			{
+				"img": "./res/img/index/products/1921.jpg"
+			},{
+				"img": "./res/img/index/products/1921mendao.jpg"
+			},{
+				"img": "./res/img/index/products/bnu.jpg"
+			}
+		]
+	},{
+		"name": "Bamboo",
+		"bio": "平面设计师，5年设计经验，好评率99%",
+		"proj":[
+			{
+				"img": "./res/img/index/products/ssss.jpg"
+			},{
+				"img": "./res/img/index/products/sszy.jpg"
+			}
+		]
+	}
+]
+}

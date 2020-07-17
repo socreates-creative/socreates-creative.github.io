@@ -1,0 +1,105 @@
+{
+"jumboItems":[
+	{
+		"jumbonum": "index-1921mendao",
+		"isActive": true,
+		"link":"./product/1921mendao"
+	}, {
+		"jumbonum": "index-201921",
+		"link":"./product/201921"
+	}
+],"items":[
+	{
+		"name":"1921「門道」执信99周年文化衫",
+		"img":"./res/img/index/products/1921mendao.jpg",
+		"bio":"等了很9，更要入手。"
+	},{
+		"name":"201921 TEE 执信98周年文化衫",
+		"img":"./res/img/index/products/201921.jpg",
+		"bio":"买上两件，早晚得穿。"
+	},{
+		"name":"1921 TEE 执信95周年文化衫",
+		"img":"./res/img/index/products/1921.jpg",
+		"bio":"简约色彩，新潮风范。"
+	},{
+		"name":"「人师世范」北师大迎新服",
+		"img":"./res/img/index/products/bnu.jpg",
+		"bio":"学为人师，行为世范。"
+	},{
+		"name":"省实「昼夜」2019届18班班级文化衫",
+		"img":"./res/img/index/products/sszy.jpg",
+		"bio":"简约色彩，新潮风范"
+	},{
+		"name":"省实胜势 2020高考助威文化衫",
+		"img":"./res/img/index/products/ssss.jpg",
+		"bio":"激情澎湃，我有胜势。"
+	}
+],"partners":[
+	{
+		"name":"广州市执信中学",
+		"img":"./res/img/index/schools/zhixin.png"
+	},{
+		"name":"广东实验中学",
+		"img":"./res/img/index/schools/gdsy.png"
+	},{
+		"name":"上海交通大学",
+		"img":"./res/img/index/schools/shjtu.png"
+	},{
+		"name":"北京师范大学<br>（珠海校区）",
+		"img":"./res/img/index/schools/bnu.png"
+	},{
+		"name":"中山大学",
+		"img":"./res/img/index/schools/sysu.png"
+	},{
+		"name":"东南大学",
+		"img":"./res/img/index/schools/seu.png"
+	},{
+		"name":"华南师范大学",
+		"img":"./res/img/index/schools/scnu.png"
+	},{
+		"name":"广州市第二中学",
+		"img":"./res/img/index/schools/gz2zx.png"
+	},{
+		"name":"惠州光正实验学校",
+		"img":"./res/img/index/schools/hzgzps.png"
+	},{
+		"name":"美国法拉古特<br>国际学校",
+		"img":"./res/img/index/schools/farragut.png"
+	},{
+		"name":"八月长安",
+		"img":"./res/img/index/stars/bayue.png"
+	},{
+		"name":"氧品原创",
+		"img":"./res/img/index/stars/yupping.png"
+	},{
+		"name":"蔡徐坤工作室",
+		"img":"./res/img/index/stars/kun.png"
+	},{
+		"name":"THE NINE",
+		"img":"./res/img/index/stars/the_nine.png"
+	},{
+		"name":"TFboys<br>全国粉丝后援会",
+		"img":"./res/img/index/stars/tfboys.png"
+	},{
+		"name":"BTS防弹少年团<br>重庆粉丝后援会",
+		"img":"./res/img/index/stars/bts.png"
+	},{
+		"name":"WANNAONE<br>粉丝后援会",
+		"img":"./res/img/index/stars/wannaone.png"
+	},{
+		"name":"硬糖少女303",
+		"img":"./res/img/index/stars/303.png"
+	}
+],"list":[
+	{
+		"name": "1921「門道」<br>执信99周年文化衫",
+		"link": "product/1921mendao"
+	},{
+		"name": "201921 TEE <br>执信98周年文化衫",
+		"link": "product/201921"
+	},{
+		"name": "定制服务",
+		"link": "customize"
+	}
+]
+}

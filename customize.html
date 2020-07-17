@@ -1,0 +1,273 @@
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>定制服务 / Socreates 枳荟</title>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/customize.css">
+	<link rel="stylesheet" href="./css/jumbo.css">
+	<link rel="shortcut icon" href="./res/ico/favicon.ico"/> 			
+	<meta name="keywords" content="Socreates,枳荟"/>
+	<meta name="description" content="枳荟 Socreates 是一个年轻的创意工作室。它试图从青年人的角度出发，贴近当下审美潮流的同时，又以我们的眼光来创新，致力于提供雅俗共赏的当代文创输出。" />
+	<meta name="apple-mobile-web-app-capable" content="yes">  
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">  
+	<meta name="format-detection" content="telephone=no">  
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+<div id="app" v-cloak>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+		<div class="container" id="navcontain">
+		<a href="./"><div class="logobox"><img class="logo" src="./res/img/logo/logow.png" width="180px"></div></a>
+	 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border-color:transparent!important">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content:flex-end;">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="./product">产品</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="./customize">定制服务</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./help">常见问题</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./about">关于</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://k.weidian.com/-z4qjIq6">商店</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+	<div class="adjust"></div>
+
+	<div class="jumbotron jumbotron-fluid customize-bg transdiv3">
+		<div class="container center text-light">
+			<p class="lead wow fadeInUp" data-wow-delay="0.2s">定制服务</p>
+			<h1 class="display-4 wow fadeInUp" style="display:inline-block;" data-wow-delay="0.6s">你也是我们<span class="nowrap">创意的一部分</span></h1>
+			<p class="lead wow fadeInUp" data-wow-delay="1.0s">无论是团体还是个人业务，枳荟帮你一条龙搞定。</p>
+		</div>
+	</div>
+
+
+	<div id="list" class="container">
+		<div class="center">
+			<h2 class="colored mt-3">想要定制什么？</h2>
+		</div>
+
+		<nav class="nav nav-pills justify-content-center mb-3 mt-5">
+			<a @click="change('all');addCurrent('1')" class="nav-item nav-link" :class="{active:current==1}">全部</a>
+			<a @click="change('idol-obj');addCurrent('2')" class="nav-item nav-link" :class="{active:current==2}">明星应援</a>
+			<!-- <a @click="change('idol-digi');addCurrent('3')" class="nav-item nav-link" :class="{active:current==3}">明星应援 (数字载体)</a> -->
+			<a @click="change('office');addCurrent('3')" class="nav-item nav-link" :class="{active:current==3}">办公文具</a>
+			<a @click="change('daily');addCurrent('4')" class="nav-item nav-link" :class="{active:current==4}">日用品</a>
+			<a @click="change('creative');addCurrent('5')" class="nav-item nav-link" :class="{active:current==5}">创意产品</a>
+		</nav>
+
+		<div class="row justify-content-center justify-content-md-start mb-5">
+			<div class="col-10 col-md-3 mt-5" v-for="(item,index) in solutions" v-if="item.type.includes(filter)">
+				<div class="card" :class="item.type" data-toggle="modal" data-target="#solutionModal" :data-param="item.param" style="cursor: pointer;">
+					<img class="card-img-top" :src="'./res/img/customize/'+item.param+'.png'">
+					<div class="card-body" style="text-align: center;">
+						<h5 class="card-title colored" :title="item.name" style="margin:0">{{item.name}}</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="solutionModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+			<div class="modal-header justify-content-center">
+				<h4 class="modal-title center" id="exampleModalLabel" >定制文化衫</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h5 class="colored center">案例展示</h5>
+				<div class="showreel center"  v-for="solution in solutions" v-if="solution.param=='tee'">
+					<div v-for="item in solution.proj" class="mr-3 mt-3" style="display: inline-block;">
+						<img :src="item.img" width="150px" style="border-radius:0.5em">
+					</div>
+				</div>
+				<h5 class="colored mt-5 center">产品参数</h5>
+				<div class="row mt-4">
+					<div class="col-12 col-md-6 mb-4">
+						<h6 class="subcolored"><b>版型指数</b></h6>
+						<div>
+							<div class="btn btn-index">紧身</div>
+							<div class="btn btn-index">修身</div>
+							<div class="btn btn-index selected">合体</div>
+							<div class="btn btn-index">略宽</div>
+							<div class="btn btn-index">宽松</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 mb-4">
+						<h6 class="subcolored"><b>弹力指数</b></h6>
+						<div>
+							<div class="btn btn-index">无弹</div>
+							<div class="btn btn-index selected">微弹</div>
+							<div class="btn btn-index">适中</div>						
+							<div class="btn btn-index">高弹</div>
+							<div class="btn btn-index">弹力</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 mb-4">
+						<h6 class="subcolored"><b>厚度指数</b></h6>
+						<div>
+							<div class="btn btn-index">轻薄</div>
+							<div class="btn btn-index">略薄</div>
+							<div class="btn btn-index">适中</div>						
+							<div class="btn btn-index selected">偏厚</div>
+							<div class="btn btn-index">加厚</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 mb-4">
+						<h6 class="subcolored"><b>长度指数</b></h6>
+						<div>
+							<div class="btn btn-index">超短</div>
+							<div class="btn btn-index">略短</div>
+							<div class="btn btn-index selected">适中</div>
+							<div class="btn btn-index">中长</div>
+							<div class="btn btn-index">超长</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+				<a class="btn btn-primary btn-success" id="next" href="#" role="button">开始定制</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="jumbotron jumbotron-fluid bg-dark text-light" style="margin-bottom:0!important">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-6 mt-3">
+				<p class="lead">产品与定制</p>
+				<br>
+				<p v-for="li in list"><small><a :href="'./'+li.link" v-html="li.name"></a></small></p>
+				</div>
+
+				<div class="col-md-2 col-6 mt-3">
+				<p class="lead">服务</p>
+				<br>
+				<p><small><a href="./help">购买帮助</a></small></p>
+				<p><small><a href="./services">售后服务</a></small></p>
+				<p><small><a href="./about#contact">反馈与联系</a></small></p>
+				</div>
+
+				<div class="col-md-2 col-6 mt-3">
+				<p class="lead">微信客服</p>
+				<br>
+				<img src="./res/img/kefu.jpg" width="80%">
+				</div>
+
+				<div class="col-md-2 col-6 mt-3">
+				<p class="lead">公众号</p>
+				<br>
+				<img src="./res/img/QR.jpg" width="80%">
+				</div>
+
+				<div class="col-md-2 col-6 mt-3">
+				<p class="lead">关于</p>
+				<br>
+				<p><small><a href="./about#intro">了解枳荟</a></small></p>
+				<p><small><a href="./about#team">团队简介</a></small></p>
+				<p><small><a href="./about#value">枳荟价值观</a></small></p>
+				</div>
+
+				<div class="col-md-2 col-6 mt-3">
+				<img src="./res/img/logo/logofooterw.png" width="120px">
+				<p class="mt-5"><small>© {{year}} Socreates.<br>All Rights Reserved.</small></p>
+				<!--p><small><a>粤ICP备xxxxxxx</a> <a style="display: inline-block;">粤公网安备xxxxxxx</a></small></p-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.2/axios.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+var app = new Vue({
+	el:'#app',
+	data(){
+		return{
+			list:[],
+			solutions:[],
+			designers:[],
+			filter:'all',
+			current:1,
+			year:'',
+		}
+	},
+	mounted(){
+		axios
+		.get('./res/json/index.json')
+		.then(response => {
+			this.list=response.data.list;
+		});
+		axios
+		.get('./res/json/customize.json')
+		.then(response => {
+			this.solutions=response.data.solutions;
+		});
+		
+		new WOW().init();
+		let currentDate = new Date();
+		this.year = currentDate.getFullYear();
+
+		$(document).ready(function imgfade(){
+			$('.universal-bg').addClass('contentfadeout');
+			$('.container').addClass('contentfadeout');
+			$('#footer').addClass('contentfadeout');
+		});
+
+		$('#solutionModal').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget);
+			var param = button.data('param');
+			var modal = $(this);
+			$('#next').attr("href",'./order?' + param);
+		});
+		
+	},
+	methods:{
+		change(index){
+			this.filter = '';
+			this.filter = index;
+		},
+		addCurrent(index){
+			this.current = index
+		}
+	},
+	watch:{
+		objType:function(){
+			if(this.objType == '仅设计稿'){
+				this.prodPlan = '';
+			}else{
+				this.prodPlan = '更佳质量'
+			}
+		}
+	}
+})
+</script>
+</html>
