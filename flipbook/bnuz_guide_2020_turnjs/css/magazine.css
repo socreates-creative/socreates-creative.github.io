@@ -16,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 
@@ -46,6 +45,7 @@ body {
   margin: 8px;
   font-size: 12px;
   line-height: 20px;
+  text-align: center;
   /* margin: 30px; */
 }
 
