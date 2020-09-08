@@ -389,9 +389,9 @@
   // Load the HTML4 version if there's not CSS transform
   yepnope({
     test: Modernizr.csstransforms,
-    yep: ['../../lib/turn.min.js'],
-    nope: ['../../lib/turn.html4.min.js'],
-    both: ['../../lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
+    yep: ['./lib/turn.min.js'],
+    nope: ['./lib/turn.html4.min.js'],
+    both: ['./lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
     complete: loadApp
   });
 
