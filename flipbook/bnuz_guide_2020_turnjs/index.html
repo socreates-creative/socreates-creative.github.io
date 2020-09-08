@@ -4,7 +4,7 @@
 <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="zh">
 <!--<![endif]-->
 
 <head>
@@ -15,6 +15,7 @@
   <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
   <script type="text/javascript" src="lib/hash.js"></script>
   <link rel="shortcut icon" href="favicon.ico"/>
+  <!-- <link href="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.6.5/antd.min.css" rel="stylesheet"> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 </head>
@@ -149,9 +150,9 @@
     </div>
 </body>
 
-<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
-<script src="https://unpkg.com/element-ui@2.13.2/lib/index.js"></script>
-<script src="https://unpkg.com/ant-design-vue@1.6.5/dist/antd.min.js"></script>
+<script src="lib/vue.min.js"></script>
+<!-- <script src="lib/antd.min.js"></script> -->
+<script src="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.6.5/antd.min.js"></script>
 
 <script type="text/javascript">
 
@@ -159,12 +160,12 @@
     var ratio = 1103 / 1655
     var w = $(window).width();
     var h = $(window).height();
-    // $('.flipboox').width(w).height(h);
-    // $(window).resize(function () {
-    //   w = $(window).width();
-    //   h = $(window).height();
-    //   $('.flipboox').width(w).height(h);
-    // });
+    $('.flipboox').width(w).height(h);
+    $(window).resize(function () {
+      w = $(window).width();
+      h = $(window).height();
+      $('.flipboox').width(w).height(h);
+    });
 
     $('#canvas').fadeIn(500);
 
