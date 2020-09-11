@@ -42,7 +42,10 @@ function loadPage(page, pageElement) {
   });
 
   // Load the page
-  img.attr('src', 'pages/imgs/img (' + page + ').jpg');
+  // 加载图片
+  // img.attr('src', 'pages/imgs/img (' + page + ').jpg');
+  img.attr('src', 'https://7363-scau-eso-3gjjrmkua0ae1b70-1302685684.tcb.qcloud.la/imgs/img%20(' + page + ').jpg');
+  // https://7363-scau-eso-3gjjrmkua0ae1b70-1302685684.tcb.qcloud.la/imgs/img%20(1).jpg
 
   loadRegions(page, pageElement);
 
